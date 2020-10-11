@@ -1,0 +1,24 @@
+.background{
+    background-image: url("/img/background.jpg");
+
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background2{
+    background-image: url("/img/backg2.jpg");
+
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-opacity{
+    opacity: 0.8;
+}
