@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const register = mongoose.model("registers")
 const TestaCPF = require("./public/js/cpfTest")
 const randomC = require("./public/js/randomCupom")
+
 module.exports = {
 
 register: async(req,res,next)=>{
@@ -11,16 +12,16 @@ try{
 
 
     if (TestaCPF(strCPF) == false) {
-        erros.push("Cpf invalido")
+        erros.push({texto: "Cpf invalido"})
     }
 
 
     if (req.body.nome.length < 3) {
-        erros.push("Nome invalido!!")
+        erros.push({texto: "Nome invalido!!"})
     }
 
     if (erros.length > 0) {
-        console.log("ERRO")
+        res.render("../views/index.handlebars", {erros:erros})
     } else {
 
         const newRegister = {
@@ -28,15 +29,27 @@ try{
             cpf: req.body.cpf,
             cupom: randomC()
         }
+
         new register(newRegister).save().then(() => {
-            console.log("Registro salvo com sucesso")
+            req.flash("success_msg", "Record saved successfully!")
+            register.findOne({cpf: req.body.cpf}).lean().then((registro)=>{
+                res.render("../views/cupomPage.handlebars", {registro: registro})
+            }).catch((err)=>{
+                req.flash("error_msg","error when loading the coupon")
+                res.redirect("/cadastro")
+            })
         }).catch((err) => {
-            console.log("Erro ao salvar o registro")
+            req.flash("error_msg", "There was an error saving the record!")
         })
-        res.redirect("/cadastro/sorteio")
+
+
+
     }
 }catch (e){
     next(e)
 }
 }
+
+
+
 }

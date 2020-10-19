@@ -1,16 +1,17 @@
 const express = require("express");
 const router = express.Router();
+const mongoose = require("mongoose")
 require("../models/Register")
+const register = mongoose.model("registers")
 const controller = require("../controller")
 
 
 router.get("/",(req,res)=>{
-    res.render("../app/views/index.ejs")
+    res.render("../views/index.handlebars")
 })
 
-router.get("/sorteio", (req,res)=>{
-    res.render("../app/views/cupomPage.ejs")
-})
+//router.get("/sorteio/:id", controller.cupomsearch)
+
 
 router.post("/register",controller.register)
 
