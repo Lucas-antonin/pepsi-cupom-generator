@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const register = mongoose.model("registers")
 const TestaCPF = require("./public/js/cpfTest")
 const randomC = require("./public/js/randomCupom")
+//const Winner = require("./public/js/randomWinner")
 
 module.exports = {
 
@@ -48,7 +49,29 @@ try{
 }catch (e){
     next(e)
 }
-}
+},winner: async(req,res,next)=>{
+    try{
+        today = new Date();
+        var currentday = today.getTime()
+console.log(currentday)
+        var deadline = 1603446766252
+
+        if(today >= deadline){
+
+            register.findOneRandom((err, result)=> {
+                if (!err) {
+                    res.render("../views/winnerPage.handlebars", {result: result.map(result => result.toJSON())})
+                }
+            })
+
+
+        }else {
+            res.render("../views/index.handlebars")
+        }
+    }catch(e){
+        next(e)
+    }
+    }
 
 
 

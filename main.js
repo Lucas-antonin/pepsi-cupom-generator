@@ -3,7 +3,7 @@ const app = express()
 const bodyParser = require("body-parser")
 const mongoose = require("mongoose")
 const handlebars = require("express-handlebars")
-const registerValidator = require("./rotes/registerValidator")
+const registerValidator = require("./rotes/routes")
 require("./models/Register")
 const session = require("express-session");
 const flash = require("connect-flash");

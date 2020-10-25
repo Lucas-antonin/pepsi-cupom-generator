@@ -20,31 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1e78af5-58fe-4fa1-8292-6fb10c671cf2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/cupomPage.handlebars" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/partials/msg.handlebars" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/randomWinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/winnerPage.handlebars" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/cupomPage.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/partials/head.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/partials/navbar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/navbar.handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/partials/script.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/main.handlebars" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/ejs.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/ejs.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ejs/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ejs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ejs/bin/cli.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ejs/ejs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ejs/ejs.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ejs/jakefile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ejs/lib/ejs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ejs/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ejs/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ejs/usage.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rotes/registerValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/rotes/registerValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rotes/registerValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/rotes/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/cupomPage.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/cupomPage.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layouts/main.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/main.handlebars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +82,16 @@
       <workItem from="1602933440708" duration="7663000" />
       <workItem from="1603020447171" duration="597000" />
       <workItem from="1603054550150" duration="407000" />
-      <workItem from="1603105686945" duration="4220000" />
+      <workItem from="1603105686945" duration="7042000" />
+      <workItem from="1603125036902" duration="3249000" />
+      <workItem from="1603196753897" duration="5919000" />
+      <workItem from="1603215271031" duration="4354000" />
+      <workItem from="1603228741927" duration="329000" />
+      <workItem from="1603377648572" duration="605000" />
+      <workItem from="1603443814207" duration="5706000" />
+      <workItem from="1603550082764" duration="606000" />
+      <workItem from="1603624293196" duration="1320000" />
+      <workItem from="1603659380096" duration="1264000" />
     </task>
     <servers />
   </component>
@@ -117,13 +111,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1602546483699">
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1603229072008">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1602546483699" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1602330990823">
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1603229072008" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1603204425546">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1602330990823" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1603204425546" />
   </component>
 </project>

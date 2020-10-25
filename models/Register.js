@@ -1,5 +1,6 @@
 const mongoose = require("mongoose")
 var uniqueValidator = require('mongoose-unique-validator');
+var random = require('mongoose-simple-random');
 const Schema = mongoose.Schema;
 
 const registers = new Schema({
@@ -18,5 +19,6 @@ const registers = new Schema({
         unique: true
     }
 })
+registers.plugin(random)
 registers.plugin(uniqueValidator)
 mongoose.model("registers", registers)

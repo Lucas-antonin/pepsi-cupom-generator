@@ -5,13 +5,7 @@ require("../models/Register")
 const register = mongoose.model("registers")
 const controller = require("../controller")
 
-
-router.get("/",(req,res)=>{
-    res.render("../views/index.handlebars")
-})
-
-//router.get("/sorteio/:id", controller.cupomsearch)
-
+router.get("/",controller.winner)
 
 router.post("/register",controller.register)
 
