@@ -20,16 +20,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1e78af5-58fe-4fa1-8292-6fb10c671cf2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/js/randomWinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/winnerPage.handlebars" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/partials/footer.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/winnerPage.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/.github/workflows/main.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/jest.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/lib/express-handlebars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/renovate.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/spec/express-handlebars.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/spec/fixtures/layouts/main-latin1.handlebars" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/spec/fixtures/layouts/main.handlebars" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/spec/fixtures/other-views/layouts/main.handlebars" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/spec/fixtures/other-views/partials/partial.handlebars" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/spec/fixtures/partials/partial-latin1.handlebars" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/spec/fixtures/partials/partial.handlebars" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/spec/fixtures/render-cached.handlebars" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/spec/fixtures/render-helper.handlebars" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/spec/fixtures/render-latin1.handlebars" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/spec/fixtures/render-partial.handlebars" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/spec/fixtures/render-text.handlebars" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/spec/fixtures/templates/subdir/template.handlebars" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/spec/fixtures/templates/template-latin1.handlebars" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-handlebars/spec/fixtures/templates/template.handlebars" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rotes/registerValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/rotes/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/cupomPage.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/cupomPage.handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layouts/main.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/main.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/cupomPage.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/cupomPage.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/msg.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/msg.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/navbar.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/navbar.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/winnerPage.handlebars" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +85,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -91,7 +121,16 @@
       <workItem from="1603443814207" duration="5706000" />
       <workItem from="1603550082764" duration="606000" />
       <workItem from="1603624293196" duration="1320000" />
-      <workItem from="1603659380096" duration="1264000" />
+      <workItem from="1603659380096" duration="1377000" />
+      <workItem from="1603739582336" duration="1500000" />
+      <workItem from="1603794944418" duration="3181000" />
+      <workItem from="1603908745675" duration="4777000" />
+      <workItem from="1603924870450" duration="43000" />
+      <workItem from="1604618741687" duration="5306000" />
+      <workItem from="1604625250818" duration="1400000" />
+      <workItem from="1604664434817" duration="600000" />
+      <workItem from="1604686575163" duration="651000" />
+      <workItem from="1605637267707" duration="2721000" />
     </task>
     <servers />
   </component>
@@ -111,10 +150,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1603229072008">
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1604687642493">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1603229072008" />
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1604687642493" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1603912120994">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1603912120994" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1603204425546">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

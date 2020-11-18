@@ -14,15 +14,16 @@ try{
 
     if (TestaCPF(strCPF) == false) {
         erros.push({texto: "Cpf invalido"})
+        req.flash("error_msg", "Invalid cpf")
     }
-
 
     if (req.body.nome.length < 3) {
         erros.push({texto: "Nome invalido!!"})
+        req.flash("error_msg", "Invalid name")
     }
-
+ 
     if (erros.length > 0) {
-        res.render("../views/index.handlebars", {erros:erros})
+      res.render("../views/index.ejs")
     } else {
 
         const newRegister = {
@@ -34,7 +35,7 @@ try{
         new register(newRegister).save().then(() => {
             req.flash("success_msg", "Record saved successfully!")
             register.findOne({cpf: req.body.cpf}).lean().then((registro)=>{
-                res.render("../views/cupomPage.handlebars", {registro: registro})
+                res.render("../views/cupomPage.ejs", {registro: registro})
             }).catch((err)=>{
                 req.flash("error_msg","error when loading the coupon")
                 res.redirect("/cadastro")
@@ -52,27 +53,20 @@ try{
 },winner: async(req,res,next)=>{
     try{
         today = new Date();
-        var currentday = today.getTime()
-console.log(currentday)
+
         var deadline = 1603446766252
 
-        if(today >= deadline){
+        if(today <= deadline){
 
-            register.findOneRandom((err, result)=> {
-                if (!err) {
-                    res.render("../views/winnerPage.handlebars", {result: result.map(result => result.toJSON())})
-                }
-            })
+
 
 
         }else {
-            res.render("../views/index.handlebars")
+            res.render("../views/index.ejs")
         }
     }catch(e){
         next(e)
     }
     }
-
-
 
 }

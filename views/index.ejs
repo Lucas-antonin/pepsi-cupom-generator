@@ -1,8 +1,9 @@
+<%- include('partials/header') %>
+<body>
+<%- include('partials/navbar') %>
 <div class="background">
-    {{#each erros}}
-        <div class="alert alert-danger">{{texto}}</div>
-        {{/each}}
-<div class="container">
+
+    <div class="container">
     <center>
     <h1 class="text-white">Sign up to participate in the draw</h1>
     </center>
@@ -23,11 +24,9 @@
 </form>
     </div>
 </div>
-{{#each registers}}
-    <form action="" method="POST">
-        <input type="hidden" name="id" value="{{_id}}">
-    </form>
-    {{/each}}
+
 
 </div>
 </div>
+</body>
+<%- include('partials/footer') %>

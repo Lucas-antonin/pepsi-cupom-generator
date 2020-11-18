@@ -2,9 +2,9 @@ const express = require("express")
 const app = express()
 const bodyParser = require("body-parser")
 const mongoose = require("mongoose")
-const handlebars = require("express-handlebars")
 const registerValidator = require("./rotes/routes")
 require("./models/Register")
+const register = mongoose.model("registers")
 const session = require("express-session");
 const flash = require("connect-flash");
 //Configs
@@ -25,15 +25,13 @@ app.use((req,res,next)=>{
     next()
 })
 //Static
+app.set('view engine', 'ejs')
 app.use(express.static(__dirname + "/public"))
 
 //Config bodyParser
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-//Handlebars
-app.engine('handlebars', handlebars({defaultLayout: 'main'}))
-app.set('views engine', 'handlebars')
 
 //Config mongoose
 mongoose.Promise = global.Promise;

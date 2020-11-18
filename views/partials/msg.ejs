@@ -1,4 +1,10 @@
-{{#if success_msg}}
+<% if(locals.message){ %>
+    <div class="alert alert-success"><%=  %></div>
+<% } %>
+
+
+
+if success_msg}}
     <div class="alert alert-success">{{success_msg}}</div>
 {{/if}}
 
